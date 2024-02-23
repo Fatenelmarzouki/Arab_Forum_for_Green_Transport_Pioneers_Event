@@ -1,0 +1,122 @@
+/* Start Who-us Style*/
+.who-heading{
+    margin-top: 150px;
+    font-size: 35px; 
+    margin-right: 50px;
+    position: relative;
+    margin-bottom: 58px;
+    font-weight: 600;
+}
+
+.who-heading::after{
+    content: "";
+    position: absolute;
+    top:calc(100% + 10px);
+    right: -10px;
+    width: 200px;
+    height: 2px;
+    background-color: black;
+}
+
+@media (max-width:991px) {
+    .who-heading{
+        font-size: 24px;
+        margin-right: 49px;
+        margin-bottom: 43px;
+    }
+    .who-heading::after{
+        width: 125px;
+    }
+}
+
+.who-title{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.who-content{   
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 40px;
+    color: #AE923E;
+    font-weight: 600;
+    letter-spacing: -0.42px;
+}
+
+.who-content + img{
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .who-content{
+        font-size: 35px;
+    }
+}
+
+@media (max-width:767px) {
+    .who-content{
+        font-size: 24px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .who-content + img{
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.who-text{
+    text-align: right;
+    margin-bottom: 80px;
+}
+.who-first , .who-second{
+    font-size: 31px;
+    font-weight: 600;
+    letter-spacing: -0.54px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.who-first{
+    margin-bottom: 35px;
+}
+@media (max-width: 991px){
+    .who-first , .who-second{
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: -0.36px;
+    }
+}
+
+.first-image {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+}
+
+.first-image img{
+    max-width: 100%;
+    width: 720px;
+}
+
+.who-third-section{
+    margin-bottom: 80px;
+}
+
+.who-flex{
+    padding: 0 30px 30px 60px;
+    text-align: center;
+}
+
+.image{
+    width: 200px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.image img{
+    max-width: 100%;
+}
+/* End Who-us Style */

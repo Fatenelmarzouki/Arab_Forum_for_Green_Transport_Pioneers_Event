@@ -1,0 +1,338 @@
+/* Start Header Style */
+header{
+    background-color: #ddd;
+}
+.sides{
+    padding-right: 17px;
+    padding-top: 19px;
+    padding-bottom: 12px;
+}
+
+.icon{
+    width: 130px;
+    margin-top: -15px;
+}
+@media (min-width:768px) and (max-width:991px){
+    .icon{
+        width: 115px;
+        margin-top: -8px;
+    }
+}
+.icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:767px) {
+    .sides{
+        padding-right: 25px;
+    }
+    .links{
+        display: none;
+    }
+    .last{
+        position: absolute;
+        right: 40%;
+    }
+    .icon{
+        width: 110px;
+        margin-top: -14px;
+    }
+}
+.links > .list{
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: inherit !important;
+}
+
+.links li a{
+    color: black;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.active{
+    background-color: #AE923E;
+    border-radius: 25px ;
+    width: 130px;
+    height: 40px;
+}
+.active > a{
+    color: #fff !important;
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .links{
+        margin-right: 25px;
+    }
+    .active{
+        width: 115px;
+    }
+    .list > a{
+        font-size: 15px !important;
+    }
+
+    .links li:last-child{
+        margin-left: -35px;
+    }
+}
+.adjust{
+    background-color: #ddd;
+    color: #AE923E;
+    margin-top: 11px;
+    width: 130px;
+    height: 40px;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #AE923E;
+    border-width: 1px;
+    text-align: center;
+    outline: none;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .adjust{
+        width: 100px;
+        margin-left: 18px;
+        font-size: 15px;
+    }
+    .adjust:hover{
+        text-align: center;
+        color: #fff;
+        font-weight: 800;
+        font-size: 15px !important;
+        background: #AE923E;
+        border-radius: 6px;
+        border-style: solid;
+        border-color: #AE923E;
+        border-width: 1px;
+        outline: none;
+    }
+    .color{
+        font-size: 15px !important;
+    }
+}
+
+.adjust:hover , .color{
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+    background: #AE923E;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #AE923E;
+    border-width: 1px;
+    outline: none;
+}
+@media (max-width:767px) {
+    .adjust{
+        width: 102px;
+    }
+}
+/* Start Styling popover */
+.popover {
+    min-width: 250px;
+    background-color: #AE923E;
+}
+.popover-arrow{
+    border-bottom-color: #AE923E;
+  }
+  .popover-arrow::before{
+    content: "";
+    border-bottom-color: #AE923E !important;
+  }
+
+  .popover-arrow::after{
+    content: "";
+    border-bottom-color: #AE923E !important ;
+  }
+.white{
+    color: #fff !important;
+}
+.position{
+    position: absolute;
+    left: 20px;
+}
+.inside{
+    cursor: default;
+}
+.pointer{
+    cursor: pointer;
+}
+.inside:hover{
+    background-color: #fff;
+    border-radius: 11px;
+    height: 35px;
+}
+
+.inside:hover .position{
+    top: 16px;
+    left: 20px;
+}
+
+.inside:hover .black{
+    padding: 5px;
+    position: absolute;
+}
+.inside:hover .white{
+    color: #AE923E !important;
+    padding: 5px;
+    position: absolute;
+}
+
+.hint{
+    display: none;
+    position: absolute;
+    left: -4px;
+    top: 36px;
+    background-color: #DDC;
+    width: 130px;
+    font-size: 14px !important;
+    height: 100px;
+    color: black;
+    text-align: center;
+    padding: 15px 15px 5px 15px;
+    word-spacing: -9px;
+    font-weight: 600;
+    border-radius: 11px;
+}
+
+
+.hint::before{
+    content: "";
+    position: absolute;
+    top: -18px;
+    width: 0;
+    height: 0;
+    border-width: 9px;
+    border-style: solid;
+    border-color: transparent transparent #ddd transparent;
+    left: 12px;
+}
+
+.first:hover .hint {
+    display: block;
+}
+
+
+@media (max-width:767px) {
+    .hint , .position , .adjust{
+        display: none;
+    }
+    .first:hover .hint{
+        display: none;
+    }
+}
+/* End Styling popover */
+.last-icon{
+    display: none;
+}
+
+@media (max-width:767px) {
+    .last-icon{
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 26px;
+        font-size: 45px;
+        cursor: pointer;
+    }
+}
+
+.menu{
+    display: none;
+}
+
+@media (max-width:767px) {
+    .menu{
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+    .icon-close{
+        position: absolute;
+        top: 25px;
+        left: 10%;
+        color: white;
+        z-index: 1100;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .block{
+        padding-top: 56px;
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        background-color: rgba(174, 146, 62, 0.94);
+        border-radius: 0px 30px 30px 0px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+        top: 0;
+        left: -100%;
+        transition: all 0.5s;
+        z-index: 1050;
+    }
+    @media (max-width:767px) {
+        .block{
+            width: 80%;
+        }
+    }
+    .menu ul li {
+        padding: 20px;
+        width: calc(100% + 40px);
+    }
+   .menu ul li a{
+        display: block;
+        width: 51%;
+        font-size: 20px;
+        color: #fff;
+    }
+    .menu-list{
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .menu-list:not(:last-child):after{
+        content: "";
+        width: 80%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+     .menu-active{
+        background: rgb(255, 255, 255);
+        border-radius: 25px;
+        padding-top: 5px;
+        font-size: 20px !important;
+        text-align: center;
+        margin-right: 30px;
+        font-weight: 600;
+        width: 130px !important;
+        height: 40px !important;
+        color: #AE923E !important;
+    }
+    
+    .none{
+        left: 0;
+    }
+
+}
+
+/* End Header Style */
+

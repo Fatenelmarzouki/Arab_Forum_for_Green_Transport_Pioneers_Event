@@ -1,0 +1,70 @@
+/* Start first section style */
+.confluence-image img{
+    max-width: 100%;
+}
+
+.block-confleunce{
+    margin-top: -80px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+@media (max-width:767px) {
+    .block-confleunce{
+        margin-top: -30px;
+        text-align: center;
+    }
+}
+/* End first section style */
+
+/* Start Second Section Style */
+.confluence-block{
+    padding-right: 90px;
+    padding-left: 40px;
+}
+
+.confluence-first{
+    position: relative;
+    margin-bottom: 100px;
+}
+.confluence-first::after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    width: 15px;
+    right: -40px;
+    height: 100%;
+    border-right: 2px solid #383838;
+    border-top: 2px solid #383838;
+    z-index: -1;
+}
+
+.confluence-first::before{
+    content: "";
+    position: absolute;
+    top: 69%;
+    right: -44px;
+    height: 60%;
+    width: 10px;
+    border-radius: 6px;
+    background-color: #AE923E;
+}
+
+.confluence-heading{
+    color: #AE923E;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: -0.72px;
+}
+
+.first-paragraph{
+    font-size: 35px;
+    font-weight: 600;
+    color: #383838;
+    letter-spacing: -0.54px;
+}
+@media (max-width: 991px) {
+    .confluence-heading, .first-paragraph{
+        font-size: 28px;
+    }
+}
+/* End Second Section Style */

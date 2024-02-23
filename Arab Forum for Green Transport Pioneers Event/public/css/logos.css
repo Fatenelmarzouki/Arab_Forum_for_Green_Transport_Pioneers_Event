@@ -1,0 +1,128 @@
+/* Start Modal Style */
+.btn-position{
+    display: none;
+    background-color: #AE923E;
+    border-radius: 6px;
+    border: none;
+    width: fit-content;
+    margin: -30px auto 50px;
+}
+.btn-content{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.48px;
+}
+
+@media (max-width: 767px) {
+    .btn-position{
+        display: block;
+    }
+}
+/* End Modal Style */
+/* Start logos Style */
+.margin-top{
+    margin-top: 130px;
+}
+.margin-bottom{
+    margin-bottom: 130px;
+}
+.section-sides{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 200px 250px;
+}
+.heading{
+    font-weight: 600;
+    font-size: 32px;
+    color: black;
+    text-align: center;
+}
+.icons{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width:455px) and (max-width:991px){
+    .section-sides{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(400px , 1fr));
+    }
+    .left-side img{
+        width: 160px !important;
+        height: 100px;
+    }
+}
+@media (max-width:454px) {
+    .margin-top .container {
+        padding: 0 !important;
+    }
+    .section-sides{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    }
+    .icons {
+        display: block;
+    }
+}
+.icons-part , .icons-other{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-part img{
+    max-width: 100%;
+}
+@media (max-width:991px) {
+    .icons-part img{
+        width: 200px;
+        height: 100px;
+    }
+}
+/* End logos Style */
+
+/* Start Content Style */
+._2023-span{
+    color: #AE923E;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+._2023-span2{
+    color: black;
+    display: block;
+    text-align: right;
+    font-size: 32px;
+    font-weight: 600;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    ._2023-span{
+        font-size: 28px;
+    }
+    ._2023-span2{
+        width: 702px;
+        font-size: 24px;
+        font-weight: 600;
+    }    
+}
+@media (max-width:767px) {
+    ._2023-span{
+        font-size: 22px;
+    }
+    ._2023-span2{
+        font-size: 20px;
+    }
+}
+@media (max-width: 575px) {
+    ._2023-span2{
+        width: 367px;
+        margin: auto;
+    }
+}
+/* End Content Style */

@@ -1,0 +1,187 @@
+/* Start Footer style */
+.footer{
+    background-color: #383838;
+    margin-top: 10px;
+}
+@media (max-width:767px) {
+    .footer{
+        height: 780px;
+    }
+}
+
+.footer .container-footer{
+    max-width: 96%;
+    padding-top: 53px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@media (min-width:992px) {
+    .footer .container-footer{
+        margin-right: 20px;
+    }
+}
+
+@media (min-width:1200px) {
+    .footer .container-footer{
+        margin-right:20px ;
+    }
+    
+}
+@media (min-width:768px) {
+    .footer .container-footer{
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer .container-footer{
+        flex-direction: column;
+    }
+    .rectangle{
+        justify-content: center;
+        margin-right: 20px;
+    }
+    .footer-heading{
+        text-align: center;
+    }
+    
+}
+
+.rectangle{
+    padding: 30px 15px;
+    background: rgba(224.19, 224.19, 224.19, 0.60);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.days , .minutes , .seconds{
+    display: inline-block;
+    background: #DDDDDD;
+    border-radius: 20px; 
+    border: 2px #383838 solid;
+    padding: 10px 15px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #AE923E;
+    letter-spacing: -0.6px;
+    position: relative;
+    min-width: 88px;
+}
+
+.days::after{
+    content: "أيام";
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #383838;
+}
+
+.minutes::after{
+    content: "دقائق";
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #383838;
+}
+
+.seconds::after{
+    content:"ثواني" ;
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #383838;
+}
+.point{
+    font-size: 40px;
+    margin: auto 10px;
+}
+
+.reservation{
+    margin: 50px auto 30px;
+    background-color: #AE923E;
+    color: #fff;
+    border: none;
+    font-size: 28px;
+    padding: 15px 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-heading{
+    font-size: 28px;
+    font-weight: 600;
+    color: #AE923E;
+    position: relative;
+    padding-right: 15px;
+}
+
+.footer-heading::after{
+    content: "";
+    position: absolute;
+    top:calc(100% + 10px) ;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #AE923E;
+}
+
+.footer-links{
+    margin-top: 30px;
+    text-align: center;
+    padding-right: 26px;
+}
+
+.footer-links li a{
+    display: block;
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.third-col{
+    position: relative;
+}
+.footer-icon{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2px;
+}
+/* End Footer style */
+
+/* Start Copyright Style */
+.final{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: #6A6A6A;
+    padding: 30px 60px;
+    margin-bottom: -30px;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+@media (max-width:767px) {
+    .final{
+        font-size: 18px;
+    }
+}
+/* End Copyright Style*/

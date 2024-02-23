@@ -1,0 +1,71 @@
+/* Start Modal Style */
+.modal-content{
+    background-color:#AE923E ;
+}
+.modal-header{
+    border-bottom: none;
+}
+/* .modal-body{
+
+} */
+.content-body{
+    position: relative;
+}
+.content-body:hover{
+    background-color: #fff;
+    color: #AE923E;
+    border-radius: 25px;
+}
+
+.content-body:hover .white{
+    color: #AE923E !important;
+}
+
+.content-body:hover .pos{
+    color: black !important;
+}
+.icon-modal{
+    color: #fff;
+    background-color: #AE923E;
+    border: none;
+}
+.pos{
+    position: relative;
+    top: 3px;
+    right: 0;
+}
+.hint-1{
+    display: none;
+    position: absolute;
+    left: -9px;
+    top: 36px;
+    background-color: #DDC;
+    width: 130px;
+    font-size: 14px !important;
+    height: 100px;
+    color: black;
+    text-align: center;
+    padding: 15px 15px 5px 15px;
+    word-spacing: -9px;
+    font-weight: 600;
+    border-radius: 11px;
+}
+
+
+.hint-1::before{
+    content: "";
+    position: absolute;
+    top: -18px;
+    width: 0;
+    height: 0;
+    border-width: 9px;
+    border-style: solid;
+    border-color: transparent transparent #ddd transparent;
+    left: 12px;
+}
+
+.pos:hover .hint-1{
+    display: block;
+}
+
+/* End Modal Style */
